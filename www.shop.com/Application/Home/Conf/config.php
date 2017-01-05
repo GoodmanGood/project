@@ -79,5 +79,11 @@ return array(
         'PASSWORD'=>'kvzkholvvfjmbcfj',
         'SECURE'=>'ssl',
         'PORT'=>465
-    ]
+    ],
+    'wxpay'=>[
+        'appid'=>'wx85adc8c943b8a477',
+        'mchid'=>'1228521002',
+        'key'=>'a687728a72a825812d34f307b630097b',
+        'appsecret'=>'465222',
+    ],
 );

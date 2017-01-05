@@ -24,10 +24,6 @@
 		<div class="panel header">
 			<a href="<?php echo U('Index/index');?>"><img class="logo" src="/Public/img/logo_2.png"></a>
 			<div class="top_menu">
-				<!--<p class="at_login">-->
-					<!--<a href="<?php echo U('Index/index');?>">首页</a><span class="spliter">|</span>-->
-					<!--<a onclick="history.go(-1)">返回</a>-->
-				<!--</p>-->
 				<div class="search_bar">
 					<input class="search_bar-input" type="text" placeholder="查找你需要的茶叶" />
 					<div style="position: relative; display: inline;">
@@ -50,11 +46,8 @@
 						<?php echo ($_SESSION['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>
 						<a href="<?php echo U('User/ucenter');?>">个人中心</a><span class="spliter">|</span>
 						<a href="<?php echo U('User/logout',['id'=>$_SESSION['login_info']['id']]);?>">退出</a><?php endif; ?>
-
 				</p>
-				<!--<p class="is_login"><span class="uname" name="uname">源码时代</span><span class="greetings">下午好~</span>-->
-					<!--<a href="">退出</a>-->
-				<!--</p>-->
+
 			</div>
 			<p class="menu">
 				<a href="<?php echo U('Index/index');?>">首页</a><span class="spliter">|</span>
@@ -162,18 +155,8 @@
 			</div>
 		</div>
 	</body>
-	
-	<script type="text/javascript" src="/Public/js/basic.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$(".center .banner").unslider({
-				animation: 'fade',
-				autoplay: true,
-				arrows: false
-			});
-		});
-	</script>
 
+	<script type="text/javascript" src="/Public/js/basic.js?v=1"></script>
 
 	<script type="text/javascript" src="/Public/js/jquery.auto-complete.min.js"></script>
 	<script type="text/javascript">

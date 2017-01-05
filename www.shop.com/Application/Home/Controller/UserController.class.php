@@ -169,12 +169,6 @@ class UserController extends Controller
         $this->success('退出成功！',U('Index/index'));
     }
     /**
-     * 个人中心
-     */
-    public function ucenter(){
-        $this->display();
-    }
-    /**
      * 收货地址管理
      */
     public function addAdress(){
@@ -222,6 +216,14 @@ class UserController extends Controller
 //            dump(D('Address')->find($id));die;
             $this->display('addAdress');
         }
-
+    }
+    /**
+     * 用户个人订单列表
+     */
+    public function ucenter(){
+        $orderList = D('Order')->getOrderList();
+//        dump($orderList);exit;
+        $this->assign('orders',$orderList);
+        $this->display();
     }
 }

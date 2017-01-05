@@ -64,18 +64,18 @@
 
                 <ul class="addresses">
                     <?php if(is_array($addresses)): foreach($addresses as $key=>$address): ?><li>
-                        <span class="is_default">默认地址</span>
+                        <?php if($address["is_default"] == 1): ?><span class="is_default">默认地址</span><?php endif; ?>
                         <p class="uname"><?php echo ($address["name"]); ?></p>
                         <p class="pre_address">
                             <select class="province" data-value="">
                                 <option><?php echo ($address["province_name"]); ?></option>
                             </select>
-                            <select class="city" data-value=" ">
+                            <select class="city" data-value="">
                                 <option><?php echo ($address["city_name"]); ?></option>
                             </select>
                             <select class="area" data-value="">
                                 <option><?php echo ($address["area_name"]); ?></option>
-                       z     </select>
+                            </select>
                         </p>
                         <p class="address" title="双击编辑" old="">
                             <?php echo ($address["province_name"]); ?> <?php echo ($address["city_name"]); ?> <?php echo ($address["area_name"]); ?> <?php echo ($address["detail_address"]); ?>
@@ -83,15 +83,16 @@
                         <p class="uphone" title="双击编辑">
                             <?php echo ($address["tel"]); ?>
                         </p>
-                        <img class="is_checked" src="/Public/img/settlement/checked.png" />
+                        <!--<?php if($address["is_default"] == 1): ?>-->
+                            <!--<img class="is_checked" src="/Public/img/settlement/checked.png" />-->
+                        <!--<?php endif; ?>-->
                         <p class="actived">
-                            <input type="radio" name="in_using" checked="checked">
-                            使用该地址
+                            <input type="radio" name="address_id" value="<?php echo ($address["id"]); ?>" <?php if($address["is_default"] == 1): ?>checked<?php endif; ?>/>使用该地址
                         </p>
                     </li><?php endforeach; endif; ?>
                     <li class="add_address">
                         <p class="plus"><a href="<?php echo U('User/addAdress');?>">+</a></p>
-                        使用新地址
+                        地址管理
                     </li>
                 </ul>
 
@@ -116,7 +117,7 @@
                     </tr><?php endforeach; endif; ?>
                     <tr>
                         <td></td>
-                        <td><p>运送方式：京东快递</p><p>运费险：0.00</p></td>
+                        <td><p>运送方式：超级快递</p><p>运费险：0.00</p></td>
                         <td></td>
                         <td><p>0.00</p><p>0.00</p></td>
                     </tr>
@@ -137,22 +138,17 @@
                 <div class="bill">
                     <div class="payment">
                         <ul>
-                            <li><input type="checkbox">微信支付</input></li>
-                            <li><input type="checkbox">在线支付</input></li>
+                            <li><input type="radio" name='payment_id' value="1" checked="checked"/>微信支付</li>
+                            <li><input type="radio" name='payment_id' value="3"/>银联支付</li>
                         </ul>
                         <ul>
-                            <li><input type="checkbox">货到付款</input></li>
-                            <li><input type="checkbox">支付宝支付</input></li>
+                            <li><input type="radio" name='payment_id' value="4"/>货到付款</li>
+                            <li><input type="radio" name='payment_id' value="2"/>支付宝支付</li>
                         </ul>
                     </div>
                     <ul class="summary">
                         <li>实付款：<span class="sum">￥<?php echo ($total_price_all); ?></span></li>
-                        <li>寄送至：<span class="address"><?php echo ($address["province_name"]); ?> <?php echo ($address["city_name"]); ?> <?php echo ($address["area_name"]); ?>
-                        <?php echo ($address["detail_address"]); ?></span></li>
-                        <li>收货人：<span class="uname"><?php echo ($address["name"]); ?></span></li>
-                        <li>
-                            联系方式：<span class="uphone"><?php echo ($address["tel"]); ?></span>
-                        </li>
+                        <input type="hidden" name="price" value="<?php echo ($total_price_all); ?>"/>
                     </ul>
                     <p><button class="button_color_scheme_dark borderRadius_scheme_small" onclick="history.go(-1)">返回购物车</button><button class="button_color_scheme_dark borderRadius_scheme_small" type="submit">提交订单</button></p>
                 </div>
@@ -185,7 +181,7 @@
 		</div>
 	</body>
 
-
+	<script type="text/javascript" src="/Public/js/basic.js?v=1"></script>
 
     <script type="text/javascript" src="/Public/js/jquery.auto-complete.min.js"></script>
     <script type="text/javascript" src="/Public/js/jquery.cxselect.min.js"></script>

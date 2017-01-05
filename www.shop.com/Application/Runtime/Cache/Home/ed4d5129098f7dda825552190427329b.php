@@ -221,7 +221,7 @@
 		</div>
 	</body>
 
-
+	<script type="text/javascript" src="/Public/js/basic.js?v=1"></script>
 
 	<script type="text/javascript" src="/Public/js/jquery.auto-complete.min.js"></script>
 	<script type="text/javascript" src="/Public/js/lightslider.js"></script>
