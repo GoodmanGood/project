@@ -1,0 +1,31 @@
+<extend name="Public:base" />
+<block name="content">
+    <div class="page-heading">
+        <h3>
+            管理首页
+        </h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Index/index')}">管理后台</a>
+            </li>
+            <li> 文章管理 </li>
+            <li class="active"> 文章查看</li>
+        </ul>
+    </div>
+                <div class="panel">
+                    <div class="panel-body text-center">
+                        <h1 class="text-center mtop35"><a href="#">{$row.article_name}</a></h1>
+                        <p class="text-center auth-row">
+                            {$row.article_intro}
+                        </p>
+                        <div class="blog-img-wide">
+
+                        </div>
+
+                        <p>
+                           {$row.content}
+                        </p>
+                        <!--<img src="__IMG__/blog/blog-wide-img.jpg" alt="">-->
+                    </div>
+                </div>
+</block>

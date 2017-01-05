@@ -1,0 +1,2028 @@
+[ 2017-01-03T09:39:57+08:00 ] 127.0.0.1 /Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\shop\admin.shop.com\Application\Admin\Controller\ArticleController.class.php 第 14 行.
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0310s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407597','Admin_Article_add','127.0.0.1') [ RunTime:0.0160s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.063004s ]
+
+[ 2017-01-03T09:39:57+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:01+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407600','Admin_Login_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:01+08:00 ] 127.0.0.1 /Verify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407601','Admin_Verify_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:06+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407606','Admin_Login_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.025001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.026001s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:09+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407609','Admin_Login_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `admin_username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `role_admin` [ RunTime:0.0490s ]
+SQL: SELECT `permission_id`,`path` FROM role_admin ra INNER JOIN role_permission rp on ra.role_id = rp.role_id INNER JOIN admin_permission ap on ap.id = permission_id  WHERE `admin_id` = '6'  [ RunTime:0.2270s ]
+SQL: UPDATE `admin` SET `last_login_time`='1483407609',`last_login_ip`='2130706433' WHERE `admin_id` = 6 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:10+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407610','Admin_Index_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.029001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.029001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:14+08:00 ] 127.0.0.1 /Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407614','Admin_Goods_index','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.*,goods_category.good_category_name as category_name,brand.name FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id LEFT JOIN brand ON brand.good_brand_id=goods.brand_id  LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_sale` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `goods_sale` INNER JOIN sale_info on goods_sale.prom_type = sale_info.id INNER JOIN goods on goods.id = goods_sale.goods_id   [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `brand` WHERE `status` > -1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `goods_category` ORDER BY left_key  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sale_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sale_info`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:20+08:00 ] 127.0.0.1 /Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407620','Admin_Goods_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.020001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.*,goods_category.good_category_name as category_name,brand.name FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id LEFT JOIN brand ON brand.good_brand_id=goods.brand_id  LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_sale` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods_sale` INNER JOIN sale_info on goods_sale.prom_type = sale_info.id INNER JOIN goods on goods.id = goods_sale.goods_id   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `brand` WHERE `status` > -1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` ORDER BY left_key  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sale_info` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sale_info`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:20+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407620','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.025002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.026002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:20+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407620','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.018001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:20+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407620','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.028002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.029002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:24+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=39&goods_id=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407624','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.015001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 39 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:26+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407625','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.014001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-03T09:40:26+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407626','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.024001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.025001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:26+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407626','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.015001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:28+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=40&goods_id=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407628','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.015001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 40 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:29+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407629','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.025002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.025002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-03T09:40:29+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407629','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.027001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.028002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:29+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407629','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.015001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:31+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=41&goods_id=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407631','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.014001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0030s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 41 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:32+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407632','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.022002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:32+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407632','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.027002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.028002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:33+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407633','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.022001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:34+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=42&goods_id=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407633','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 42 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:35+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407635','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.012000s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:35+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407635','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.016001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:40:35+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407635','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:40:55+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407647','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022002s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+
+[ 2017-01-03T09:41:06+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407656','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+
+[ 2017-01-03T09:41:10+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407666','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.012001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+
+[ 2017-01-03T09:41:13+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407670','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.017001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+
+[ 2017-01-03T09:41:18+08:00 ] 127.0.0.1 /Goods/pics.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407678','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.022001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0030s ]
+SQL: INSERT INTO `goods_gallery` (`goods_id`,`gallery_path`) VALUES ('33','http://oidycnd9i.bkt.clouddn.com/Uploads_2017-01-03_586b012004ac0.png') [ RunTime:0.0000s ]
+SQL: INSERT INTO `goods_gallery` (`goods_id`,`gallery_path`) VALUES ('33','http://oidycnd9i.bkt.clouddn.com/Uploads_2017-01-03_586b01282e4a3.png') [ RunTime:0.0000s ]
+SQL: INSERT INTO `goods_gallery` (`goods_id`,`gallery_path`) VALUES ('33','http://oidycnd9i.bkt.clouddn.com/Uploads_2017-01-03_586b0132c83f4.png') [ RunTime:0.0000s ]
+SQL: INSERT INTO `goods_gallery` (`goods_id`,`gallery_path`) VALUES ('33','http://oidycnd9i.bkt.clouddn.com/Uploads_2017-01-03_586b01366bc4b.png') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:41:19+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407679','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:41:19+08:00 ] 127.0.0.1 /Goods/pics/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407679','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.017001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '33'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:41:19+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407679','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:41:22+08:00 ] 127.0.0.1 /Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407682','Admin_Goods_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.*,goods_category.good_category_name as category_name,brand.name FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id LEFT JOIN brand ON brand.good_brand_id=goods.brand_id  LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_sale` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods_sale` INNER JOIN sale_info on goods_sale.prom_type = sale_info.id INNER JOIN goods on goods.id = goods_sale.goods_id   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `brand` WHERE `status` > -1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` ORDER BY left_key  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sale_info` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sale_info`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T09:41:22+08:00 ] 127.0.0.1 /Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483407682','Admin_Goods_index','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.017001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT goods.*,goods_category.good_category_name as category_name,brand.name FROM `goods` LEFT JOIN goods_category ON goods_category.good_category_id=goods.category_id LEFT JOIN brand ON brand.good_brand_id=goods.brand_id  LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_sale` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_sale` INNER JOIN sale_info on goods_sale.prom_type = sale_info.id INNER JOIN goods on goods.id = goods_sale.goods_id   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `brand` WHERE `status` > -1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods_category` ORDER BY left_key  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sale_info` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sale_info`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [8] Undefined index: brand_id D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 155 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\7460c3bd08e8aaf3e719467d6ea19bd3.php 第 166 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:59:49+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408788','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.025002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.026002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:59:49+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408789','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.017001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T09:59:50+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408789','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T10:00:55+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=43&goods_id=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408855','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.017001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 43 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T10:00:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:00:56+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408856','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013000s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:00:57+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408857','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.018001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:00:57+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408857','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.018001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T10:00:58+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=44&goods_id=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408858','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 44 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:00:59+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408859','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.014001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:00+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408860','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.018001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T10:01:00+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408860','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.015001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:01+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=46&goods_id=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408861','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.015001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 46 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:02+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408862','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T10:01:03+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408863','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.026002s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.026002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant gallery_id - assumed 'gallery_id' D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\shop\admin.shop.com\Application\Runtime\Cache\Admin\57f4b957a7a5620e80be5a9d318af2f5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:03+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408863','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.018001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:04+08:00 ] 127.0.0.1 /Goods/pic_delete.html?gallery_id=47&goods_id=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408864','Admin_Goods_pic_delete','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.022001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: DELETE FROM `goods_gallery` WHERE `gallery_id` = 47 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-03T10:01:05+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408865','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:06+08:00 ] 127.0.0.1 /Goods/pics/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408866','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.021001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-03T10:01:11+08:00 ] 127.0.0.1 /Goods/pics/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408871','Admin_Goods_pics','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.022001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`parent_id`,`menu_name`,`path`,`level` FROM `menu` ORDER BY lft  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '38'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-03T10:01:21+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408879','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.014000s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 290 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 326 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, boolean given D:\phpStudy\WWW\shop\admin.shop.com\Application\Admin\Controller\UploadController.class.php 第 26 行.
+
+[ 2017-01-03T10:01:21+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408881','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.014001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 290 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 326 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, boolean given D:\phpStudy\WWW\shop\admin.shop.com\Application\Admin\Controller\UploadController.class.php 第 26 行.
+
+[ 2017-01-03T10:01:21+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408881','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0000s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 290 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 326 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, boolean given D:\phpStudy\WWW\shop\admin.shop.com\Application\Admin\Controller\UploadController.class.php 第 26 行.
+
+[ 2017-01-03T10:01:21+08:00 ] 127.0.0.1 /Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `log` [ RunTime:0.0040s ]
+SQL: INSERT INTO `log` (`log_time`,`route`,`ip`) VALUES ('1483408881','Admin_Upload_upload','127.0.0.1') [ RunTime:0.0010s ]
+INFO: Run Admin\Behavior\LogBehavior [ RunTime:0.013001s ]
+INFO: Run Admin\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.013001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 83 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 290 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 326 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Upload\Driver\Qiniu\QiniuStorage.class.php 第 327 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, boolean given D:\phpStudy\WWW\shop\admin.shop.com\Application\Admin\Controller\UploadController.class.php 第 26 行.
+

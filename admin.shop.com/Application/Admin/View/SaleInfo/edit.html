@@ -1,0 +1,45 @@
+<extend name="Public:base" />
+
+<!-- page heading start-->
+<block name="content">
+<div class="page-heading">
+    <h3>
+        {$title}
+    </h3>
+    <ul class="breadcrumb">
+        <li>
+            <a href="#">管理后台</a>
+        </li>
+        <li> <a href="{:U('index')}">活动管理</a> </li>
+        <li class="active"> {$title}</li>
+    </ul>
+</div>
+<!-- page heading end-->
+
+<!--body wrapper start-->
+<section class="wrapper">
+    <!-- page start-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    新增商品分类
+                </header>
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" method="post">
+                        <input type="hidden" name="id" value="{$row.id}"/>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">活动名称</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="info_prom_type" placeholder="请输入活动名" value="{$row.info_prom_type}">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">提交修改</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+</block>

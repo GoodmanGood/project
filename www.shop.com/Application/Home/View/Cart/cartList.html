@@ -1,0 +1,86 @@
+<extend name="Public:index"/>
+<block name="css">
+	<link href="__CSS__/jquery.auto-complete.css" rel="stylesheet" type="text/css">
+	<link href="__CSS__/ucart.css" rel="stylesheet" type="text/css">
+</block>
+<block name="content">
+	<div class="container center">
+		<div class="panel">
+
+			<p class="title">我的购物车</p>
+			<present name="msg">
+				<table class="cargo">
+				{$msg}
+				</table>
+				<else/>
+			<table class="cargo">
+				<thead>
+				<tr>
+					<td colspan="2"><input type="checkbox" />全部</td>
+					<td>商品信息</td>
+					<td>单价</td>
+					<td>数量</td>
+					<td>小计</td>
+					<td>操作</td>
+				</tr>
+				</thead>
+				<tbody>
+				<foreach name="cartLists" item="good">
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td><img src="{$good.goods_logo}" /></td>
+						<td>{$good.goods_name}</td>
+						<td>￥：{$good.shop_price}</td>
+						<td><button class="decrease">-</button>
+							<input class="amount" type="text" value="{$good.amount}"/>
+							<button class="increase">+</button></td>
+						<td>￥：{$good.total_price}</td>
+						<td>
+							<span class="delete">
+								<a href="{:U('Cart/remove',['id'=>$good['id']])}">×</a>
+							</span>
+						</td>
+					</tr>
+
+				</foreach>
+
+				</tbody>
+				<tfoot>
+				<tr>
+					<td colspan="4">
+						<input type="checkbox" />全选　<a href="">删除</a>
+					</td>
+					<td>
+						已选择商品 <span class="count">{$total_number}</span> 件
+					</td>
+					<td colspan="2">
+						合计（不含运费）：<span class="sum">￥{$total_price_all}</span>　
+						<a href="{:U('Order/create')}">
+							<button class="submit">结算</button>
+						</a>
+					</td>
+				</tr>
+				</tfoot>
+			</table>
+			</present>
+		</div>
+	</div>
+</block>
+<block name="js">
+	<script type="text/javascript" src="__JS__/jquery.auto-complete.min.js"></script>
+	<script type="text/javascript">
+		$(".center .cargo .decrease, .center .cargo .increase").addClass("button_color_scheme_dark");
+		$(".center .cargo .submit").addClass("button_color_scheme_dark borderRadius_scheme_small");
+
+		$(function(){
+			$(".center .cargo .delete").live({
+				click: function(){
+					$(this).parent().parent().remove();
+				},
+				hover: function(){
+					$(this).css({"cursor":"pointer"});
+				}
+			});
+		});
+	</script>
+</block>

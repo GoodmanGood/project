@@ -1,0 +1,193 @@
+<extend name="Public:base" />
+<!--<block name="css">-->
+    <!--<css href="__PUBLIC__/uploadify/uploadify.css" />-->
+    <!--<style>-->
+        <!--#file_upload_1{height: 100px!important;}-->
+        <!--.shangchuanBtn{width: 100px!important; height: 100px!important; line-height: 100px!important; background: white; border: 1px dashed #aaa; border-radius: 0; font-size: 30px; font-weight: bold; color: #666;}-->
+        <!--.shangchuanBtn:hover{background: #f5f5f5!important;}-->
+    <!--</style>-->
+<!--</block>-->
+<!-- page heading start-->
+<block name="content">
+<div class="page-heading">
+    <h3>
+        {$title}
+    </h3>
+    <ul class="breadcrumb">
+        <li>
+            <a href="{:U('Index/index')}">管理后台</a>
+        </li>
+        <li> <a href="{:U('Goods/index')}">商品管理</a> </li>
+        <li class="active"> {$title} </li>
+    </ul>
+</div>
+<!-- page heading end-->
+
+<!--body wrapper start-->
+<section class="wrapper">
+    <!-- page start-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    新增商品
+                </header>
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">商品名称</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="goods_name" placeholder="请输入商品名字">
+                        </div>
+                        <div class="form-group">
+                            <label>分类</label>
+                            <select name="category_id" class="form-control">
+                                <volist name="row" id="cate">
+                                    <option value="{$cate.good_category_id}">{:str_repeat('&nbsp;',$cate['level']-1)}{$cate.good_category_name}</option>
+                                </volist>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>所属品牌</label>
+                            <select name="brand_id" class="form-control">
+                                <volist name="brands" id="brand">
+                                    <option value="{$brand.good_brand_id}">{$brand.name}</option>
+                                </volist>
+                            </select>
+                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label>所属供应商</label>-->
+                            <!--<select name="supplier_id" class="form-control">-->
+                                <!--<volist name="suppliers" id="s">-->
+                                    <!--<option value="{$s.id}">{$s.name}</option>-->
+                                <!--</volist>-->
+                            <!--</select>-->
+                        <!--</div>-->
+
+                        <div class="form-group">
+                            <label>商品市场价</label>
+                            <input type="text" class="form-control" name="market_price">
+                        </div>
+                        <div class="form-group">
+                            <label>商品本店价</label>
+                            <input type="text" class="form-control" name="shop_price">
+                        </div>
+                        <div class="form-group">
+                            <label>商品库存</label>
+                            <input type="text" class="form-control" name="stock">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">商品详情</label>
+                            <!-- 加载编辑器的容器 -->
+                            <script id="container" name="goods_content" type="text/plain">
+
+                            </script>
+                            <!-- 配置文件 -->
+                            <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                            <!-- 编辑器源码文件 -->
+                            <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                            <!-- 实例化编辑器 -->
+                            <script type="text/javascript">
+                                var ue = UE.getEditor('container');
+                            </script>
+                        </div>
+                        <div class="form-group">
+                            <label>商品促销</label>
+                            <volist name="sales" id="sale">
+                                <input type="checkbox" name="goods_status[]" value="{$sale.id}">{$sale.info_prom_type}&nbsp;&nbsp;
+                            </volist>
+                        </div>
+                        <div class="form-group">
+                            <label>是否上架</label>
+                            <input type="radio" name="is_on_sale" value="0">下架
+                            <input type="radio" name="is_on_sale" value="1" checked>上架
+                        </div>
+                        <div class="form-group">
+                            <label for="logo-upload">LOGO</label>
+                            <input type="file" id="logo-upload">
+                            <input type="hidden" name="goods_logo" id="logo" value="__IMG__/good.jpg"/><br/>
+                            <img src="" id="logo-preview" style="max-width: 100px;max-height: 100px"/>
+                        </div>
+                        <!--相册-->
+                        <div class="form-group">
+                            <label>商品相册（最多可同时上传五张图片）</label>
+                            <div class="file-box">
+                                <div id="divPreview">
+
+                                </div>
+                                <input type="file" name="file" class="file" id="fileField"  />
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>状态</label>
+                            <input type="radio" name="status" value="1" checked />正常
+                            <input type="radio" name="status" value="0" />关闭
+                        </div>
+                        <div class="form-group">
+                            <label>自定义排序</label>
+                            <input type="text" class="form-control" name="sort">
+                        </div>
+                        <button type="submit" class="btn btn-primary">提交新增</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+</block>
+
+
+<block name="js">
+    <script type='text/javascript'>
+        $(function () {
+        //初始化一个uploadify控件
+        $("#logo-upload").uploadify({
+            height: 30,
+            swf: '__UPLOADIFY__/uploadify.swf',
+            uploader: '{:U("Upload/upload")}',
+            width: 120,
+            buttonText:'选择logo文件',
+            fileTypeExts:'*.jpg;*.jpeg;*.jpe;*.png;*.gif',
+            onUploadSuccess:function(file,data){
+                //将响应字符串转换为json对象
+                data = $.parseJSON(data);
+                if(data.status){
+                    //成功了
+                    $('#logo').val(data.url);
+                    $('#logo-preview').attr('src',data.url);
+                    layer.msg(data.msg);
+                }else{
+                    layer.msg(data.msg);
+                }
+            },
+            });
+
+//初始化一个uploadify控件 相册
+            $("#fileField").uploadify({
+                'height'        : 30,
+                'swf'       : '__UPLOADIFY__/uploadify.swf',
+                'uploader'      :'{:U("Upload/upload")}',
+                'width'         : 120,
+                'onUploadSuccess' : function(file, data, response) {
+                    data = $.parseJSON(data);
+                    if(!data.status){
+                        layer.msg(data.msg);
+                    }else{
+
+                        // 上传成功
+                        $("#divPreview").append("<img src="+data.url+" style='max-width: 100px;max-height: 100px'/>");
+                        $("#divPreview").append("<input type='hidden' name='gallery_path[]' value='" + data.url + "'/>");
+
+                        layer.msg(data.msg);
+
+                    }
+                },
+                'uploadLimit'   : 5,                                                                      //上传最多图片张数
+                'buttonText'    : '选择相册文件',
+            });
+        });
+    </script>
+</block>

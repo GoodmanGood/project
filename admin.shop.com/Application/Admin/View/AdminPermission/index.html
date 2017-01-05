@@ -1,0 +1,96 @@
+<extend name="Public:base" />
+<block name="content">
+
+    <!-- page heading start-->
+    <div class="page-heading">
+        <h3>
+            {$title}
+        </h3>
+        <ul class="breadcrumb">
+            <li>
+                <a href="{:U('Index/index')}">管理后台</a>
+            </li>
+            <li class="active"> {$title} </li>
+        </ul>
+    </div>
+    <!-- page heading end-->
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        权限列表
+                            <span class="tools pull-right">
+                                <a href="{:U('add')}" class="btn btn-success btn-link">新增</a>
+                            </span>
+                    </header>
+                    <div class="panel-body">
+                        <form class="form-inline" action="{:U()}">
+                            <div class="form-group">
+                                <label for="exampleInputName2">分类名字</label>
+                                <input type="text" class="form-control" id="exampleInputName2" name="name" value="{:I('get.name')}">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                        <hr/>
+                        <div class="adv-table">
+                            <table  class="display table table-bordered table-striped" id="dynamic-table">
+                                <thead>
+                                <tr>
+                                    <th>权限名称</th>
+                                    <th>路径</th>
+                                    <th>简介</th>
+                                    <th class="hidden-phone">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="lists" id="list">
+                                    <tr class="gradeX">
+                                        <td>
+                                            <for start="1" end="$list['level']">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            </for>
+                                            {$list.permission_name}
+                                        </td>
+                                        <td>{$list.path}</td>
+                                        <td>{$list.permission_intro}</td>
+                                        <td>
+                                            <a href="{:U('edit', array('id' => $list['id']))}" class="btn btn-xs btn-success">编辑</a>
+                                            <a data-href="{:U('delete', array('id' => $list['id']))}" data-toggle="modal" data-target="#myModal" class="btn btn-danger btn-xs deleteBtn">删除</a>
+                                            <!--<a onclick="return confirm('你确定要删除嘛?')" href="{:U('delete', array('category_id' => $list['category_id']))}" class="btn btn-danger btn-xs deleteBtn">删除</a>-->
+                                            <input type="hidden" name="id" value="{$list['id']}"/>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                            <div id="demo1">
+                                <div class="scott" id="layui-laypage-0" style="float:right;">
+                                    {$pages}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script type='text/javascript'>
+        $(function(){
+            $('.deleteBtn').click(function(){
+                var del_id = $(this).next().val();
+                var url = "{:U('delete')}?id="+del_id;
+                layer.confirm('你确定要删除它吗？', {
+                    btn: ['必须啊','算了吧'] //按钮
+                }, function(){
+                    location.href=url;
+                }, function(){
+
+                });
+            });
+        });
+    </script>
+</block>

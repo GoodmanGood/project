@@ -1,0 +1,132 @@
+<extend name="Public:base" />
+<!--<block name="css">-->
+    <!--<css href="__PUBLIC__/uploadify/uploadify.css" />-->
+    <!--<style>-->
+        <!--#file_upload_1{height: 100px!important;}-->
+        <!--.shangchuanBtn{width: 100px!important; height: 100px!important; line-height: 100px!important; background: white; border: 1px dashed #aaa; border-radius: 0; font-size: 30px; font-weight: bold; color: #666;}-->
+        <!--.shangchuanBtn:hover{background: #f5f5f5!important;}-->
+    <!--</style>-->
+<!--</block>-->
+<!-- page heading start-->
+<block name="content">
+<div class="page-heading">
+    <h3>
+        设置管理员
+    </h3>
+    <ul class="breadcrumb">
+        <li>
+            <a href="{:U('Index/index')}">管理后台</a>
+        </li>
+        <li class="active"> 设置管理员 </li>
+    </ul>
+</div>
+<!-- page heading end-->
+
+<!--body wrapper start-->
+<section class="wrapper">
+    <!-- page start-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    设置管理员
+                </header>
+                <div class="panel-body">
+                    <form role="form" action="{:U()}" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">用户名</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="admin_username" placeholder="请输入用户名">
+                            <p><span>* 字母开头，允许5-16字节，允许字母数字下划线</span></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>密码</label>
+                            <input type="password" class="form-control" name="admin_password">
+                            <p><span>* 以字母开头，长度在6~18之间，只能包含字母、数字和下划线</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label>确认密码</label>
+                            <input type="password" class="form-control" name="re_password">
+                            <p><span>* 两次密码必须一致</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label>邮箱</label>
+                            <input type="email" class="form-control" name="admin_email">
+                            <p><span>请输入正确的邮箱地址</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="">设置角色</label>
+                            <div id="role-ids">
+                            </div>
+                            <ul id="treeDemo" class="ztree"></ul>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">提交新增</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+</block>
+
+
+<block name="css">
+    <link rel="stylesheet" href="__ZTREE__/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <style>
+        #treeDemo{
+            margin-top: 10px;
+            border: 1px solid #617775;
+            background: #f0f6e4;
+            width: 220px;
+            overflow-y: scroll;
+            overflow-x: auto;
+        }
+    </style>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__ZTREE__/js/jquery.ztree.core.js"></script>
+    <script type="text/javascript" src="__ZTREE__/js/jquery.ztree.excheck.js"></script>
+    <script type='text/javascript'>
+
+        <!--
+        var setting = {
+            check: {
+                enable: true
+            },
+            data: {
+                key:{
+                    name:'role_name',
+                },
+                simpleData: {
+                    enable: true,
+                    idKey:'role_id',
+                }
+            },
+            callback:{
+                onCheck:function(){
+                    //获取所有节点
+                    var node = ztreeObj.getCheckedNodes(true);
+                    var role_node = $('#role-ids');
+                    //清空选择值
+                    role_node.empty();
+                    $(node).each(function(i,v){
+                        var id = v.role_id;
+                        var html = '<input type="hidden" name="role_id[]" value="'+ id +'"/>';
+                        $(html).appendTo(role_node);
+                    });
+                }
+            }
+        };
+
+        var zNodes ={$roles};
+
+        var ztreeObj = $.fn.zTree.init($("#treeDemo"),setting,zNodes);
+        ztreeObj.expandAll(true);
+
+
+
+    </script>
+</block>

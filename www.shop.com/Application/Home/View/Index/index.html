@@ -1,0 +1,115 @@
+<extend name="Public:index"/>
+<block name="content">
+    <div class="container center">
+        <div class="panel">
+            <!-- banner START -->
+            <div class="banner">
+                <ul>
+                    <li><a href="product.html"><img src="__IMG__/index/banner1.png" /></a></li>
+                    <li><a href="product.html"><img src="__IMG__/index/banner2.png" /></a></li>
+                    <li><a href="product.html"><img src="__IMG__/index/banner3.png" /></a></li>
+                    <li><a href="product.html"><img src="__IMG__/index/banner4.png" /></a></li>
+                </ul>
+            </div>
+            <!-- banner END -->
+            <!-- "新品上市" START -->
+            <div class="new_product">
+                <p class="title"><img src="__IMG__/index/sfbt1.png"></p>
+                <div class="flex-list-box">
+                    <dl class="products-list">
+                        <foreach name="new_goods" item="new_good">
+                            <a href="{:U('Goods/goodInfo',['id'=>$new_good['id']])}">
+                                <dd>
+                                    <p><img src="{$new_good.goods_logo}"></p>
+                                    <p class="paid">127付款</p>
+                                    <p class="price">¥：{$new_good.shop_price}</p>
+                                    <p>{$new_good.goods_name}</p>
+                                </dd>
+                            </a>
+                        </foreach>
+                    </dl>
+                </div>
+            </div>
+            <!-- "新品上市" END -->
+            <!-- "所有商品" START -->
+            <div class="all_product">
+                <p class="title"><img src="__IMG__/index/sfbt2.png"></p>
+                <div class="flex-list-box">
+                    <dl class="products-list">
+
+                        <foreach name="all_goods" item="all_good">
+                            <a href="{:U('Goods/goodInfo',['id'=>$all_good['id']])}">
+                                <dd>
+                                    <p><img src="{$all_good.goods_logo}"></p>
+                                    <p class="paid">127付款</p>
+                                    <p class="price">¥：{$all_good.shop_price}</p>
+                                    <p>{$all_good.goods_name}</p>
+                                </dd>
+                            </a>
+                        </foreach>
+
+
+                    </dl>
+                </div>
+            </div>
+            <!-- "所有商品" END -->
+            <!-- "get小技能" START -->
+            <div class="tcommon">
+                <p class="title"><img src="__IMG__/index/sybt3.png"></p>
+                <div class="flex-list-box">
+                    <dl class="products-list">
+                        <foreach name="category" item="cat">
+                            <dd>
+                                <p class="title2">{$cat.category_name}</p>
+                                <ul>
+                                    <volist name="articles" id="article" offset="0" length='4'>
+                                        <if condition="$article['category_id'] eq $cat['category_id']">
+                                            <a href="{:U('Goods/article',['id'=>$article['article_id']])}">
+                                                <li>{$article.article_name}</li>
+                                            </a>
+                                        </if>
+                                    </volist>
+                                </ul>
+                            </dd>
+                        </foreach>
+
+
+                    </dl>
+                </div>
+            </div>
+            <!-- "get小技能" END -->
+            <!-- "多快好省" START -->
+            <div class="VFGC">
+                <p class="title"></p>
+                <div class="flex-list-box">
+                    <dl>
+                        <dd>
+                            <img src="__IMG__/index/syfw1.png">
+                        </dd>
+                        <dd>
+                            <img src="__IMG__/index/syfw2.png">
+                        </dd>
+                        <dd>
+                            <img src="__IMG__/index/syfw3.png">
+                        </dd>
+                        <dd>
+                            <img src="__IMG__/index/syfw4.png">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- "多快好省" END -->
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        $(function(){
+            $(".center .banner").unslider({
+                animation: 'fade',
+                autoplay: true,
+                arrows: false
+            });
+        });
+    </script>
+</block>

@@ -1,0 +1,100 @@
+<extend name="Public:base" />
+<!--<block name="css">-->
+    <!--<css href="__PUBLIC__/uploadify/uploadify.css" />-->
+    <!--<style>-->
+        <!--#file_upload_1{height: 100px!important;}-->
+        <!--.shangchuanBtn{width: 100px!important; height: 100px!important; line-height: 100px!important; background: white; border: 1px dashed #aaa; border-radius: 0; font-size: 30px; font-weight: bold; color: #666;}-->
+        <!--.shangchuanBtn:hover{background: #f5f5f5!important;}-->
+    <!--</style>-->
+<!--</block>-->
+<!-- page heading start-->
+<block name="content">
+<div class="page-heading">
+    <h3>
+        修改密码
+    </h3>
+    <ul class="breadcrumb">
+        <li>
+            <a href="{:U('Index/index')}">管理后台</a>
+        </li>
+        <li class="active"> 修改密码 </li>
+    </ul>
+</div>
+<!-- page heading end-->
+
+<!--body wrapper start-->
+<section class="wrapper">
+    <!-- page start-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    修改密码
+                </header>
+                <div class="panel-body">
+                    <form role="form" action="{:U('update')}" method="post" enctype="multipart/form-data">
+                       <input type="hidden" name="admin_id" value="{$row.admin_id}"/>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">用户名</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" name="admin_username" placeholder="请输入用户名" value="{$row.admin_username}" readonly="readonly">
+                            <p><span>* 字母开头，允许5-16字节，允许字母数字下划线</span></p>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>旧密码</label>
+                            <input type="password" class="form-control" name="old_password" value="">
+                            <p><span>* 请输入原始密码</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label>密码</label>
+                            <input type="password" class="form-control" name="admin_password">
+                            <p><span>* 以字母开头，长度在6~18之间，只能包含字母、数字和下划线</span></p>
+                        </div>
+                        <div class="form-group">
+                            <label>确认密码</label>
+                            <input type="password" class="form-control" name="re_password">
+                            <p><span>* 两次密码必须一致</span></p>
+                        </div>
+                        <!--<input type="hidden" name="admin_email" value="{$row.admin_email}"/>-->
+                        <button type="submit" class="btn btn-primary">提交修改</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+</block>
+
+
+<block name="js">
+    <script type='text/javascript'>
+        $(function () {
+        //初始化一个uploadify控件
+        $("#logo-upload").uploadify({
+            height: 30,
+            swf: '__UPLOADIFY__/uploadify.swf',
+            uploader: '{:U("Upload/upload")}',
+            width: 120,
+            buttonText:'选择logo文件',
+            fileTypeExts:'*.jpg;*.jpeg;*.jpe;*.png;*.gif',
+            onUploadSuccess:function(file,data){
+                //将响应字符串转换为json对象
+                data = $.parseJSON(data);
+                if(data.status){
+                    //成功了
+                    $('#logo').val(data.url);
+                    $('#logo-preview').attr('src',data.url);
+                    layer.msg(data.msg);
+                }else{
+                    layer.msg(data.msg);
+                }
+            },
+            });
+
+
+        });
+    </script>
+</block>

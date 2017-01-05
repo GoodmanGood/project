@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="admin, dashboard, bootstrap, template, flat, modern, theme, responsive, fluid, retina, backend, html5, css, css3">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>Admin-X</title>
+    <!--common-->
+    <link rel="stylesheet" type="text/css" href="__JS__/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+    <link href="__CSS__/style.css" rel="stylesheet">
+    <link href="__CSS__/page.css" rel="stylesheet">
+    <link href="__CSS__/style-responsive.css" rel="stylesheet">
+    <link href="__UPLOADIFY__/common.css" rel="stylesheet">
+    <!--<style>-->
+        <!--.current{background-color:rgba(0,255,150,0.5);}-->
+        <!--.prev,.num,.next,.current{width:auto;height:auto;margin:4px;padding:1px 2px;box-shadow:0 0 2px rgba(0,0,0,0.2);background-color:rgba(255,255,255,0.1);}-->
+    <!--</style>-->
+    <block name="css"></block>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <a href="index.html"><img src="__IMG__/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="index.html"><img src="__IMG__/logo_icon.png" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+        <div class="left-side-inner">
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class=""><a href="{:U('Index/index')}"> <span>管理首页</span></a></li>
+                <foreach name='nav_menus' item='p_nav'>
+                    <eq name='p_nav.level' value='1'>
+                        <li class="menu-list nav_active"><a href=""> <span>{$p_nav.menu_name}</span></a>
+                            <ul class="sub-menu-list">
+                                <foreach name='nav_menus' item='s_nav'>
+                                    <eq name='s_nav.parent_id' value='$p_nav["id"]'>
+                                        <li><a href="{:U($s_nav['path'])}"> {$s_nav.menu_name}</a></li>
+                                    </eq>
+                                </foreach>
+                            </ul>
+                        </li>
+                    </eq>
+                </foreach>
+
+            </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+            <!--toggle button start-->
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+
+            <!--search start-->
+            <form class="searchform" action="index.html" method="post">
+                <input type="text" class="form-control" name="keyword" placeholder="搜索" />
+            </form>
+            <!--search end-->
+
+            <!--notification menu start -->
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <img src="__IMG__/photos/user-avatar.png" alt="" />
+                            {$Think.session.login_info.admin_username}
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li><a href="{:U('Admin/edit',['admin_id'=>$_SESSION['login_info']['admin_id']])}"><i class="fa fa-user"></i>  个人资料</a></li>
+                            <li><a href="{:U('Admin/update',['admin_id'=>$_SESSION['login_info']['admin_id']])}"><i class="fa fa-cog"></i>  修改密码</a></li>
+                            <li><a href="{:U('Login/logout',['admin_id'=>$_SESSION['login_info']['admin_id']])}"><i class="fa fa-sign-out"></i> 退出</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+        <block name="content">
+
+        </block>
+
+
+
+
+        <!--footer section start-->
+        <footer>
+            2014 &copy; AdminEx by ThemeBucket
+        </footer>
+        <!--footer section end-->
+
+
+    </div>
+    <!-- main content end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="__JS__/jquery-1.10.2.min.js"></script>
+<script src="__JS__/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="__JS__/jquery-migrate-1.2.1.min.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+<script src="__JS__/jquery.nicescroll.js"></script>
+<script src="__JS__/modernizr.min.js"></script>
+<script src="__JS__/scripts.js"></script>
+<script src="__LAYER__/layer.js"></script>
+<script src="__UPLOADIFY__/jquery.uploadify.min.js"></script>
+
+
+
+<!--common scripts for all pages-->
+<script type="text/javascript" src="__JS__/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+
+<block name="js"></block>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="http://www.itsource.cn/upload/operationableFile/logo_small.jpg " />
+		<title>注册</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="/Public/css/basic.css" rel="stylesheet" type="text/css">
+		<link href="/Public/css/register.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/Public/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="/Public/js/jquery.auto-complete.min.js"></script>
+	</head>
+
+	<body>
+		<!-- header -->
+		<div class="panel header">
+			<a href="index.html"><img class="logo" src="/Public/img/logo_2.png"></a>
+			<div class="top_menu">
+				<p class="at_login">
+					<a href="<?php echo U('Index/index');?>">首页</a><span class="spliter">|</span>
+					<a onclick="history.go(-1)">返回</a>
+				</p>
+				<div class="search_bar">
+					<input class="search_bar-input" type="text" placeholder="查找你需要的茶叶" />
+					<div style="position: relative; display: inline;">
+						<ul class="auto_wrapper">
+							<li>数据一</li>
+							<li>数据二</li>
+							<li>数据三</li>
+							<li>数据四</li>
+							<li>数据五</li>
+						</ul>
+					</div>
+					<button class="search_bar-submit" type="search"><img src="/Public/img/syss.png">搜索</button>
+					<button class="cart" type="button" onclick="javascript:window.location.href='ucart.html'"><img src="/Public/img/sygw.png">　购物车</button>
+				</div>
+				<p class="not_login">
+					<a href="login.html">登录</a><span class="spliter">|</span>
+					<a href="register.html">注册</a><span class="spliter">|</span>
+					<a href="ucenter.html">用户中心</a>
+				</p>
+				<p class="is_login"><span class="uname" name="uname">源码时代</span><span class="greetings">下午好~</span>
+					<a href="">退出</a>
+				</p>
+			</div>
+			<p class="menu">
+				<a href="index.html">首页</a><span class="spliter">|</span>
+				<a href="product_list.html">朴茶区</a><span class="spliter">|</span>
+				<a href="product_list.html">有机区</a><span class="spliter">|</span>
+				<a href="product_list.html">老茶区</a><span class="spliter">|</span>
+				<a href="product_list.html">自饮区</a><span class="spliter">|</span>
+				<a href="product_list.html">老牌区</a><span class="spliter">|</span>
+			</p>
+		</div>
+
+		<!-- center -->
+		<div class="panel center">
+			<p class="title">用户注册</p>
+		<form action="<?php echo U();?>" method="post">
+			<ul>
+				<li>
+					用　户　名　<input class="uname" type="text" name="username" placeholder="请输入你喜欢的昵称"/>
+				</li>
+				<li>
+					姓　　　名　<input class="rname" type="text" name="real_name" placeholder="请输入正确的姓名"/>
+				</li>
+				<li>
+					出生年月日　<input class="uage" type="date" name="birth" placeholder="请输入正确的出生年月日"/>
+				</li>
+				<li>
+					邮　　　箱　<input class="uemail" type="email" name="email" placeholder="请输入正确的格式"/>
+				</li>
+				<li>
+					<span style="letter-spacing: 0.33em; margin-right: -0.33em;">手机号码</span>
+					　<input class="uphone" type="text" name="tel" placeholder="请输入正确的手机号"/>
+					<!--<button class="verification_code" type="button">获取验证码</button>-->
+					<input type="button" class="verification_code" value="获取验证码" style="background-color:#a0603d ;color: white"/>
+
+				</li>
+				<li>
+					手机验证码　<input class="uname" type="text" name="tel_code" placeholder="请输入您的手机验证码"/>
+				</li>
+				<li>
+					密　　　码　  <input class="pwd" type="password" name="password" placeholder="请输入6-16位密码"/>
+				</li>
+				<li>
+					<span style="letter-spacing: 0.33em; margin-right: -0.33em;">确认密码　</span>
+					<input class="pwd_confirm" type="password" name="repassword" placeholder="请确认密码"/>
+				</li>
+				<li>
+					　　　　　　<button class="submit" type="submit">注　册</button>
+				</li>
+			</ul>
+		</form>
+		</div>
+
+		<!-- footer -->
+		<div class="container footer">
+			<div class="panel cfooter">
+				<div class="f_top">
+					<div class="t_left">
+						<p>源码时代商城-出售源码时代周边产品，学习资料</p>
+						<p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼6F</p>
+						<p>电&emsp;&emsp;话：&emsp;028-86261949</p>
+						<p>邮&emsp;&emsp;箱：&emsp;yuandaima@itsource.cn</p>
+						<p>2006-2016成都源代码教育咨询有限公司 版权所有</p>
+						<p>
+							<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备14030149号-1</a>
+						</p>
+					</div>
+					<div class="t_right">
+						<div class="footer_right_wx">
+							<img alt="源码时代" src="/Public/img/1.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+	<script type="text/javascript" src="/Public/js/basic.js"></script>
+	<script src="/Public/ext/layer/layer.js"></script>
+	<script type="text/javascript">
+		$(".center input").addClass("borderRadius_scheme_large");
+		$(".center button").addClass("button_color_scheme_dark borderRadius_scheme_large");
+		$(".center .verification_wrapper input, .center .verification_wrapper button").removeClass("borderRadius_scheme_large").addClass("borderRadius_scheme_small");
+
+
+		var InterValObj; //timer变量，控制时间
+		var count = 60; //间隔函数，1秒执行
+		var curCount;//当前剩余秒数
+		function code(){
+			//自定页
+			layer.open({
+				title: ['请输入验证码', 'background-color:#A0603D;color:white'],
+				type: 1,
+				skin: 'layui-layer-demo', //样式类名
+				closeBtn: 0, //不显示关闭按钮
+				anim: 2,
+				shadeClose: true, //开启遮罩关闭
+				content: '<div style="text-align:center;padding:10px;">\
+								<p>\
+								<input type="text" id=\'verify\' class="verification" style="border-radius: 5px;height: 20px;margin-bottom: 15px"/><br />\
+								<img src=\'<?php echo U("Verify/index");?>\' onclick="verify()"/>\
+								</p>\
+						   </div>',
+				btnAlign: 'c', //按钮位置
+				area: ['200px','210px'], //宽高
+				anim:3, //弹出效果
+				btn:['发送']
+				,yes: function(){
+
+					layer.closeAll();
+					//获取码值
+					var phoneNum = $('.uphone').val();
+					var code = $('.verification').val();
+					var url = '<?php echo U("send_sms");?>';
+					var data = {
+						tel: phoneNum,
+						verify: code,
+					};
+					//获取返回信息
+					$.getJSON(url, data, function (res) {
+						if(res.status){
+							layer.msg(res.msg, {icon: 6});
+							curCount = count;
+							//设置button效果，开始计时
+							$(".verification_code").attr("disabled", "true");
+							$(".verification_code").val( curCount + "s后再次获取");
+							InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+						}else{
+							layer.msg(res.msg, {icon: 5});
+						}
+					});
+				}
+			});
+		}
+		//timer处理函数
+		function SetRemainTime() {
+			if (curCount == 0) {
+				window.clearInterval(InterValObj);//停止计时器
+				$(".verification_code").removeAttr("disabled");//启用按钮
+				$(".verification_code").val("重新获取");
+			}
+			else {
+				curCount--;
+				$(".verification_code").val(curCount + "s后可再获取");
+			}
+		}
+
+
+		$('.verification_code').click(code)
+
+		function verify(e){
+			var _imgUrl = "<?php echo U('verify/index');?>";
+			_imgUrl += '?c=' + Math.random();
+			e = e || window.event;
+			e.target.src = _imgUrl;
+		}
+
+
+
+	</script>
+</html>
