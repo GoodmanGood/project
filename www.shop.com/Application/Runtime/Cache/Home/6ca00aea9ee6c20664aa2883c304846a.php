@@ -14,10 +14,8 @@
 	<link href="/Public/css/jquery.auto-complete.css" rel="stylesheet" type="text/css">
 	<link href="/Public/css/ucart.css" rel="stylesheet" type="text/css">
 
-		<script type="text/javascript" src="/Public/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="/Public/js/jquery3.1.0.js"></script>
 		<script type="text/javascript" src="/Public/js/unslider-min.js"></script>
-
-
 	</head>
 
 	<body>
@@ -41,10 +39,12 @@
 				</div>
 				<!--<?php echo dump();?>-->
 				<p class="not_login">
-					<?php if($_SESSION['login_info'] == null): ?><a href="<?php echo U('User/login');?>">登录</a><span class="spliter">|</span>
+					<?php if(!getUserId()): ?><a href="<?php echo U('User/login');?>">登录</a><span class="spliter">|</span>
 					<a href="<?php echo U('User/reg');?>">注册</a><span class="spliter"></span>
 						<?php else: ?>
+						<!--<?php echo dump($_SESSION);?>-->
 						<?php echo ($_SESSION['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>
+						<!--<?php echo ($_SESSION['sess_']['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>-->
 						<a href="<?php echo U('User/ucenter');?>">个人中心</a><span class="spliter">|</span>
 						<a href="<?php echo U('User/logout',['id'=>$_SESSION['login_info']['id']]);?>">退出</a><?php endif; ?>
 				</p>

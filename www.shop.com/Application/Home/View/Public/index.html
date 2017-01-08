@@ -11,10 +11,8 @@
 		<link href="__CSS__/unslider.css" rel="stylesheet" type="text/css">
 		<link href="__CSS__/unslider-dots.css" rel="stylesheet" type="text/css">
 		<block name="css"></block>
-		<script type="text/javascript" src="__JS__/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="__JS__/jquery3.1.0.js"></script>
 		<script type="text/javascript" src="__JS__/unslider-min.js"></script>
-
-
 	</head>
 
 	<body>
@@ -23,9 +21,9 @@
 			<a href="{:U('Index/index')}"><img class="logo" src="__IMG__/logo_2.png"></a>
 			<div class="top_menu">
 				<div class="search_bar">
-					<input class="search_bar-input" type="text" placeholder="查找你需要的茶叶" />
+					<input class="search_bar-input" id="search-input" type="text" placeholder="查找你需要的茶叶" />
 					<div style="position: relative; display: inline;">
-						<ul class="auto_wrapper">
+						<ul class="auto_wrapper" id="search-res">
 							<li>数据一</li>
 							<li>数据二</li>
 							<li>数据三</li>
@@ -38,11 +36,13 @@
 				</div>
 				<!--{:dump()}-->
 				<p class="not_login">
-					<if condition="$_SESSION['login_info'] eq null">
+					<if condition="!getUserId()">
 					<a href="{:U('User/login')}">登录</a><span class="spliter">|</span>
 					<a href="{:U('User/reg')}">注册</a><span class="spliter"></span>
 						<else/>
-						{$Think.session.login_info.real_name}&nbsp;&nbsp;|</span>
+						<!--{:dump($_SESSION)}-->
+						{$_SESSION['login_info']['real_name']}&nbsp;&nbsp;|</span>
+						<!--{$_SESSION['sess_']['login_info']['real_name']}&nbsp;&nbsp;|</span>-->
 						<a href="{:U('User/ucenter')}">个人中心</a><span class="spliter">|</span>
 						<a href="{:U('User/logout',['id'=>$_SESSION['login_info']['id']])}">退出</a>
 					</if>
@@ -83,8 +83,10 @@
 			</div>
 		</div>
 	</body>
-
-	<script type="text/javascript" src="__JS__/basic.js?v=1"></script>
+	<script type="text/javascript">
+		var search_url = '{:U('Goods/csSearch')}';
+	</script>
+	<script type="text/javascript" src="__JS__/basic.js?v={:mt_rand(1,9999)}"></script>
 <block name="js">
 
 </block>

@@ -1,0 +1,2134 @@
+[ 2017-01-08T09:17:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php): failed to open stream: Invalid argument D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php
+
+[ 2017-01-08T09:17:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:17:29+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:17:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:17:38+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:17:38+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:18:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:18:02+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:18:02+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:41:07+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:41:11+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'dxy' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:41:14+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:41:17+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'dxy' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `user` SET `last_login_time`='1483839677',`last_login_ip`='127.0.0.1' WHERE `id` = 21 [ RunTime:0.1550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-08T09:41:18+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:41:18+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-08T09:41:19+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:41:20+08:00 ] 127.0.0.1 /User/ucenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0560s ]
+SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (10,7,5,4,3)  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 44 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 51 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 59 行.
+NOTIC: [8] Undefined variable: list D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:41:43+08:00 ] 127.0.0.1 /User/ucenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (10,7,5,4,3)  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 44 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 51 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 59 行.
+NOTIC: [8] Undefined variable: list D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:41:46+08:00 ] 127.0.0.1 /Order/pay/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `order` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\8e05b547319d3c5c2d4bc4768453cd79.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\8e05b547319d3c5c2d4bc4768453cd79.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\8e05b547319d3c5c2d4bc4768453cd79.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:41:55+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:41:58+08:00 ] 127.0.0.1 /Goods/goodInfo/id/44.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM goods g INNER JOIN goods_category gc on g.category_id = gc.good_category_id INNER JOIN goods_detail gd on g.id = gd.goods_id INNER JOIN brand on g.brand_id = brand.good_brand_id  WHERE `id` = '44' LIMIT 1   [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `goods_gallery` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `goods_gallery` WHERE `goods_id` = '44'  [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php on line 40 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:42:00+08:00 ] 127.0.0.1 /Cart/add2cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cart` WHERE `goods_id` = 44 AND `user_id` = 21 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `cart` (`goods_id`,`amount`,`user_id`) VALUES ('44','1','21') [ RunTime:0.1260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:01+08:00 ] 127.0.0.1 /Cart/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0030s ]
+SQL: SELECT `goods_id`,`amount` FROM `cart` WHERE `user_id` = 21  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods` WHERE `id` IN (44) AND `is_on_sale` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: total_price D:\phpStudy\WWW\shop\www.shop.com\Application\Home\Model\CartModel.class.php 第 27 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\6ca00aea9ee6c20664aa2883c304846a.php on line 40 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\6ca00aea9ee6c20664aa2883c304846a.php 第 47 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\6ca00aea9ee6c20664aa2883c304846a.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:01+08:00 ] 127.0.0.1 /Public/css/jquery.auto-complete.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-08T09:42:02+08:00 ] 127.0.0.1 /Order/create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`amount` FROM `cart` WHERE `user_id` = 21  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `id` IN (44) AND `is_on_sale` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: total_price D:\phpStudy\WWW\shop\www.shop.com\Application\Home\Model\CartModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `address` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\a730c022b708aa9e4cb18f7a0946d324.php on line 39 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\a730c022b708aa9e4cb18f7a0946d324.php 第 46 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\a730c022b708aa9e4cb18f7a0946d324.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:42:05+08:00 ] 127.0.0.1 /Order/create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `address` WHERE `id` = 10 AND `user_id` = 21 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `order` (`user_id`,`name`,`province_name`,`city_name`,`area_name`,`detail_address`,`tel`,`price`,`payment_id`,`delivery_id`,`delivery_name`,`delivery_price`,`create_time`,`status`,`payment_name`) VALUES ('21','admin','四川省','成都市','大邑县','成都市大邑县','18708132346','8999.00','1','1','超级快递','0','1483839724','2','微信支付') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`amount` FROM `cart` WHERE `user_id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `id` IN (44) AND `is_on_sale` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: total_price D:\phpStudy\WWW\shop\www.shop.com\Application\Home\Model\CartModel.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name` FROM `goods` WHERE (  `id` = '44' AND `stock` < '1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: UPDATE `goods` SET `stock`=stock-1 WHERE `id` = 44 [ RunTime:0.0010s ]
+SQL: INSERT INTO `order_detail` (`order_id`,`goods_id`,`goods_name`,`goods_price`,`amount`,`logo`,`sub_total`) VALUES ('11','44','绝版神仙茶','8999.00','1','http://oidycnd9i.bkt.clouddn.com/Uploads_2017-01-02_5869f6fb89353.jpg','8999') [ RunTime:0.0000s ]
+SQL: DELETE FROM `cart` WHERE `user_id` = 21 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:42:06+08:00 ] 127.0.0.1 /User/ucenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (11,10,7,5,4,3)  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 44 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 51 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 59 行.
+NOTIC: [8] Undefined variable: list D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:09+08:00 ] 127.0.0.1 /Order/pay/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `order` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:09+08:00 ] 127.0.0.1 /Qrcode/index/code/d2VpeGluOi8vd3hwYXkvYml6cGF5dXJsP3ByPWdSZDRtdGk%3D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T09:42:15+08:00 ] 127.0.0.1 /Order/pay/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\8e05b547319d3c5c2d4bc4768453cd79.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\8e05b547319d3c5c2d4bc4768453cd79.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\8e05b547319d3c5c2d4bc4768453cd79.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:19+08:00 ] 127.0.0.1 /Order/pay/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-08T09:42:19+08:00 ] 127.0.0.1 /Qrcode/index/code/d2VpeGluOi8vd3hwYXkvYml6cGF5dXJsP3ByPTZ2RUU5YWk%3D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:48+08:00 ] 127.0.0.1 /User/ucenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (11,10,7,5,4,3)  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 44 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 51 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 59 行.
+NOTIC: [8] Undefined variable: list D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:51+08:00 ] 127.0.0.1 /Order/pay/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:42:51+08:00 ] 127.0.0.1 /Qrcode/index/code/d2VpeGluOi8vd3hwYXkvYml6cGF5dXJsP3ByPWlDQlpzUHU%3D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:50:57+08:00 ] 127.0.0.1 /Order/pay/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:51:08+08:00 ] 127.0.0.1 /Order/pay/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 48 行.
+NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T09:51:08+08:00 ] 127.0.0.1 /Qrcode/index/code/d2VpeGluOi8vd3hwYXkvYml6cGF5dXJsP3ByPXg1bVRZMVU%3D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T10:02:31+08:00 ]  
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8] Undefined index: REQUEST_METHOD D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\App.class.php 第 31 行.
+NOTIC: [8] Undefined index: REQUEST_URI D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Dispatcher.class.php 第 137 行.
+NOTIC: [8] Use of undefined constant _PHP_FILE_ - assumed '_PHP_FILE_' D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Dispatcher.class.php 第 186 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T16:55:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0150s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T16:55:53+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T16:55:54+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T16:56:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: sess_ D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T16:56:05+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T16:56:06+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:53:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0260s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:53:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:53:13+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T21:53:13+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T21:55:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:55:01+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:55:01+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:55:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T21:55:12+08:00 ] 127.0.0.1 /Public/img/syxh.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:55:12+08:00 ] 127.0.0.1 /Public/img/sysj.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:55:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:58:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0090s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-08T21:59:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T21:59:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T21:59:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:00:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:01:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T22:08:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:11:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-08T22:11:18+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:11:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-08T22:11:41+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:13:47+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:51+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:51+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=me
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:51+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=mei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:52+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=me
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:52+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:52+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:52+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=me
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:52+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=mei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:53+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meis
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:53+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:53+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meisha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:53+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meishan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:54+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meisha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:54+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:54+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meis
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:54+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=mei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:54+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=me
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:54+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:55+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:55+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=mei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:56+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=me
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:56+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meis
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:57+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:57+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meisha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:57+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meishan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:57+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89%E5%B1%B1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:13:58+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:14:33+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:33+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E6%98%AF
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:35+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:35+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=me
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:35+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=mei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:37+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meis
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:37+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meish
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:37+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meisha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:37+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=meishan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:37+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89%E5%B1%B1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:37+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:38+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:38+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89ch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:38+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89cha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:14:38+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=%E7%9C%89%E8%8C%B6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:15:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0030s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:15:39+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:15:40+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:15:40+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:16:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:16:07+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:16:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-08T22:16:21+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+
+[ 2017-01-08T22:16:22+08:00 ] 127.0.0.1 /Goods/csSearch.html?keyword=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+

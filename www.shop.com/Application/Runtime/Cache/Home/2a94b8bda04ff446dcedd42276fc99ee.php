@@ -11,10 +11,8 @@
 		<link href="/Public/css/unslider.css" rel="stylesheet" type="text/css">
 		<link href="/Public/css/unslider-dots.css" rel="stylesheet" type="text/css">
 		
-		<script type="text/javascript" src="/Public/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="/Public/js/jquery3.1.0.js"></script>
 		<script type="text/javascript" src="/Public/js/unslider-min.js"></script>
-
-
 	</head>
 
 	<body>
@@ -23,9 +21,9 @@
 			<a href="<?php echo U('Index/index');?>"><img class="logo" src="/Public/img/logo_2.png"></a>
 			<div class="top_menu">
 				<div class="search_bar">
-					<input class="search_bar-input" type="text" placeholder="查找你需要的茶叶" />
+					<input class="search_bar-input" id="search-input" type="text" placeholder="查找你需要的茶叶" />
 					<div style="position: relative; display: inline;">
-						<ul class="auto_wrapper">
+						<ul class="auto_wrapper" id="search-res">
 							<li>数据一</li>
 							<li>数据二</li>
 							<li>数据三</li>
@@ -38,10 +36,12 @@
 				</div>
 				<!--<?php echo dump();?>-->
 				<p class="not_login">
-					<?php if($_SESSION['login_info'] == null): ?><a href="<?php echo U('User/login');?>">登录</a><span class="spliter">|</span>
+					<?php if(!getUserId()): ?><a href="<?php echo U('User/login');?>">登录</a><span class="spliter">|</span>
 					<a href="<?php echo U('User/reg');?>">注册</a><span class="spliter"></span>
 						<?php else: ?>
+						<!--<?php echo dump($_SESSION);?>-->
 						<?php echo ($_SESSION['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>
+						<!--<?php echo ($_SESSION['sess_']['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>-->
 						<a href="<?php echo U('User/ucenter');?>">个人中心</a><span class="spliter">|</span>
 						<a href="<?php echo U('User/logout',['id'=>$_SESSION['login_info']['id']]);?>">退出</a><?php endif; ?>
 				</p>
@@ -171,8 +171,10 @@
 			</div>
 		</div>
 	</body>
-
-	<script type="text/javascript" src="/Public/js/basic.js?v=1"></script>
+	<script type="text/javascript">
+		var search_url = '<?php echo U('Goods/csSearch');?>';
+	</script>
+	<script type="text/javascript" src="/Public/js/basic.js?v=<?php echo mt_rand(1,9999);?>"></script>
 
     <script type="text/javascript">
         $(function(){

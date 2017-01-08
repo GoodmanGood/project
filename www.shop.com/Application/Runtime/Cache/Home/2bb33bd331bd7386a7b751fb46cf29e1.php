@@ -12,11 +12,14 @@
 		<link href="/Public/css/unslider-dots.css" rel="stylesheet" type="text/css">
 		
 	<link href="/Public/css/ucenter.css" rel="stylesheet" type="text/css">
+	<style>
+		.error{
+			color: red;
+		}
+	</style>
 
-		<script type="text/javascript" src="/Public/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="/Public/js/jquery3.1.0.js"></script>
 		<script type="text/javascript" src="/Public/js/unslider-min.js"></script>
-
-
 	</head>
 
 	<body>
@@ -40,10 +43,12 @@
 				</div>
 				<!--<?php echo dump();?>-->
 				<p class="not_login">
-					<?php if($_SESSION['login_info'] == null): ?><a href="<?php echo U('User/login');?>">登录</a><span class="spliter">|</span>
+					<?php if(!getUserId()): ?><a href="<?php echo U('User/login');?>">登录</a><span class="spliter">|</span>
 					<a href="<?php echo U('User/reg');?>">注册</a><span class="spliter"></span>
 						<?php else: ?>
+						<!--<?php echo dump($_SESSION);?>-->
 						<?php echo ($_SESSION['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>
+						<!--<?php echo ($_SESSION['sess_']['login_info']['real_name']); ?>&nbsp;&nbsp;|</span>-->
 						<a href="<?php echo U('User/ucenter');?>">个人中心</a><span class="spliter">|</span>
 						<a href="<?php echo U('User/logout',['id'=>$_SESSION['login_info']['id']]);?>">退出</a><?php endif; ?>
 				</p>
@@ -73,6 +78,8 @@
 				<p class="title">个人中心</p>
 				<ul>
 					<li class="order_list">订单列表</li>
+					<li class="changing_pwd">修改密码</li>
+					<li class="user_info">编辑个人资料</li>
 					<li class="delivery_addresses"><a href="<?php echo U('User/addAdress');?>">收货地址管理</a></li>
 				</ul>
 			</div>
@@ -80,6 +87,10 @@
 				<ul>
 					<li class="order_list">
 						<p class="title2">订单列表</p>
+						<?php if($list): ?><tr>
+								<td colspan="3"><?php echo ($list); ?></td>
+							</tr>
+							<?php else: ?>
 					<?php if(is_array($orders)): foreach($orders as $k=>$order): ?><table class="all">
 							<tr>
 								<th>商品信息</th>
@@ -91,19 +102,50 @@
 									<p><span class="date"><?php echo date('Y-m-d H:i:s',$order['create_time']);?></span>&emsp;<span class="sequence">订单号：<?php echo ($order["id"]); ?></span></p>
 									<img src="<?php echo ($order["goods_list"]["0"]["logo"]); ?>">
 									<ul>
-										<?php echo ($order["goods_list"]["$k"]["goods_name"]); ?>
+										<?php echo ($order["goods_list"]["0"]["goods_name"]); ?>
 									</ul>
 								</td>
 								<td>￥：<?php echo ($order['total_price']); ?></td>
 								<td>
-									<?php switch($order["status"]): case "0": ?>已取消<?php break;?>
-										<?php case "1": ?><a href="<?php echo U('Order/pay',['id'=>$order['id']]);?>" style="color: white;background-color: green;padding: 5px 10px">待付款</a><?php break;?>
-										<?php case "2": ?>待发货<?php break;?>
-										<?php case "3": ?><a href="#">确认收货</a><?php break;?>
-										<?php case "4": ?>交易完成<?php break; endswitch;?>
+									<?php switch($order["status"]): case "1": ?>已取消<?php break;?>
+										<?php case "2": ?><a href="<?php echo U('Order/pay',['id'=>$order['id']]);?>" style="color: white;background-color: green;padding: 5px 10px">待付款</a><?php break;?>
+										<?php case "3": ?>待发货<?php break;?>
+										<?php case "4": ?><a href="<?php echo U('Order/orderTrue',['id'=>$order['id']]);?>" style="color: white;background-color: green;padding: 5px 10px">确认收货</a><?php break;?>
+										<?php case "5": ?>交易完成<?php break; endswitch;?>
 								</td>
 							</tr>
-						</table><?php endforeach; endif; ?>
+						</table><?php endforeach; endif; endif; ?>
+					</li>
+					<li class="changing_pwd">
+						<p class="title2">设置密码</p>
+						<dl>
+							<form action="<?php echo U('User/editPassword');?>" method="post" id="Epassword">
+								<dt>旧密码：</dt>
+								<dd><input type="text" class="old_pwd" name="old_password"/></dd>
+								<dt>新密码：</dt>
+								<dd><input type="text" class="new_pwd" name="password"/></dd>
+								<dt>确认密码：</dt>
+								<dd><input type="text" class="new_pwd_confirm" name="repassword"/></dd>
+							</dl>
+							<button type="submit">提交</button>
+						</form>
+					</li>
+					<li class="user_info">
+						<p class="title2">个人资料设置</p>
+						<dl>
+							<dt>昵称：</dt>
+							<dd><input class="uname" type="text" name="username" placeholder="请输入你的新昵称"/></dd>
+							<dt>出生年月日：</dt>
+							<dd><input class="uage" type="date" name="birth" placeholder="请输入正确的出生年月日"/></dd>
+							<!--<dt>邮箱：</dt>-->
+							<!--<dd><input class="uemail" type="text" name="email" placeholder="请输入正确的格式"/></dd>-->
+							<dt>手机号码：</dt>
+							<dd><input class="uphone" type="text" name="tel" placeholder="请输入新的手机号"/>
+								<!--<button class="verification_code" type="button">获取验证码</button>-->
+								<input type="button" class="verification_code" value="获取验证码" style="background-color:#a0603d ;color: white;height: 30px"/>
+							</dd>
+						</dl>
+						<button type="submit">提交</button>
 					</li>
 				</ul>
 			</div>
@@ -322,6 +364,116 @@
 
 			/* Adress module END */
 
+		});
+	</script>
+	<script src="/Public/ext/layer/layer.js"></script>
+	<script type="text/javascript">
+		$(".center input").addClass("borderRadius_scheme_large");
+		$(".center button").addClass("button_color_scheme_dark borderRadius_scheme_large");
+		$(".center .verification_wrapper input, .center .verification_wrapper button").removeClass("borderRadius_scheme_large").addClass("borderRadius_scheme_small");
+
+
+		var InterValObj; //timer变量，控制时间
+		var count = 60; //间隔函数，1秒执行
+		var curCount;//当前剩余秒数
+		function code(){
+			//自定页
+			layer.open({
+				title: ['请输入验证码', 'background-color:#A0603D;color:white'],
+				type: 1,
+				skin: 'layui-layer-demo', //样式类名
+				closeBtn: 0, //不显示关闭按钮
+				anim: 2,
+				shadeClose: true, //开启遮罩关闭
+				content: '<div style="text-align:center;padding:10px;">\
+								<p>\
+								<input type="text" id=\'verify\' class="verification" style="border-radius: 5px;height: 20px;margin-bottom: 15px"/><br />\
+								<img src=\'<?php echo U("Verify/index");?>\' onclick="verify()"/>\
+								</p>\
+						   </div>',
+				btnAlign: 'c', //按钮位置
+				area: ['200px','210px'], //宽高
+				anim:3, //弹出效果
+				btn:['发送']
+				,yes: function(){
+
+					layer.closeAll();
+					//获取码值
+					var phoneNum = $('.uphone').val();
+					var code = $('.verification').val();
+					var url = '<?php echo U("send_sms");?>';
+					var data = {
+						tel: phoneNum,
+						verify: code,
+					};
+					//获取返回信息
+					$.getJSON(url, data, function (res) {
+						if(res.status){
+							layer.msg(res.msg, {icon: 6});
+							curCount = count;
+							//设置button效果，开始计时
+							$(".verification_code").attr("disabled", "true");
+							$(".verification_code").val( curCount + "s后再次获取");
+							InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+						}else{
+							layer.msg(res.msg, {icon: 5});
+						}
+					});
+				}
+			});
+		}
+		//timer处理函数
+		function SetRemainTime() {
+			if (curCount == 0) {
+				window.clearInterval(InterValObj);//停止计时器
+				$(".verification_code").removeAttr("disabled");//启用按钮
+				$(".verification_code").val("重新获取");
+			}
+			else {
+				curCount--;
+				$(".verification_code").val(curCount + "s后可再获取");
+			}
+		}
+
+
+		$('.verification_code').click(code)
+
+		function verify(e){
+			var _imgUrl = "<?php echo U('verify/index');?>";
+			_imgUrl += '?c=' + Math.random();
+			e = e || window.event;
+			e.target.src = _imgUrl;
+		}
+
+
+
+	</script>
+	<script type="text/javascript" src="/Public/js/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		//-------------jquery-validation验证
+		$("#Epassword").validate({
+			rules: {
+				old_password: {
+					required: true,
+				},
+				password: {
+					required: true,
+				},
+				repassword: {
+					required: true,
+				},
+			},
+			messages: {
+				old_password: {
+					required: "旧密码不能为空！",
+				},
+				password: {
+					required: "密码不能为空！",
+				},
+				repassword: {
+					required: "重复密码不能为空！",
+				},
+			}
 		});
 	</script>
 

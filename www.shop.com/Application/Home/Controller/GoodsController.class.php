@@ -81,4 +81,28 @@ class GoodsController extends Controller
         $this->assign('article',$article);
         $this->display('');
     }
+    /**
+     * 全部商品的搜索
+     */
+    public function csSearch($keyword){
+        vendor("sphinx.sphinxapi.php");
+        $sphinx = new \SphinxClient();
+        $sphinx->SetServer('127.0.0.1',9312);
+        $sphinx ->SetMatchMode(SPH_MATCH_ANY);
+        $res = $sphinx->Query($keyword,"*",'test');
+        $gid = isset($res['matches'])?array_keys($res['matches']):[];
+        $data = [];
+        if($gid){
+            //查询搜索
+            $rows = M('Goods')->field('name,id')->alias('g')->join('goods_detail gd on g.id = gd.goods_id')->where(['id'=>['in',$gid]])->select();
+            foreach($rows as $row ){
+                //遍历拼出url地址
+                $data = [
+                    'goods_name'=>$row['goods_name'],
+                    'url'=>U('Goods/goodInfo',['id'=>$row['id']])
+                ];
+            }
+        }
+        $this->ajaxReturn($data);
+    }
 }

@@ -18,7 +18,7 @@ class OrderModel extends Model
     protected $_auto = [
         ['create_time',NOW_TIME,1],
         ['user_id','getUserId',self::MODEL_INSERT,'function'],
-        ['status',1]
+        ['status',2]
     ];
     /**
      * 生成订单
@@ -50,7 +50,9 @@ class OrderModel extends Model
             'create_time' => $this->data['create_time'],
             'status' => $this->data['status']
         ];
-        $payment_id = $this->data(['payment_id']);
+        $payment_id = $this->data['payment_id'];
+//        dump($payment_id);
+//        exit;
         switch ($payment_id){
             case 1:
                 $data['payment_name'] = '微信支付';
@@ -140,6 +142,9 @@ class OrderModel extends Model
         //查询该用户所有的订单信息
         $orders = $this->where(['user_id'=>getUserId()])->order('id desc')->getField('id,create_time,status,price,delivery_price');
         $oids = array_keys($orders);
+        if(empty($oids)){
+            return false;
+        }
         //订单详情
         $order_detail = M('OrderDetail')->where(['order_id'=>['in',$oids]])->select();
         foreach($order_detail as $detail){
@@ -149,5 +154,11 @@ class OrderModel extends Model
             $orders[$detail['order_id']]['total_price'] = number_format($total_price,2,'.','');
         }
         return $orders;
+    }
+    /**
+     * 修改订单状态
+     */
+    public function saveStatus($order,$num){
+        $this->where(['id'=>$order['id']])->setField('status',$num);
     }
 }

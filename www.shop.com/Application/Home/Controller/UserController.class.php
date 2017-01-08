@@ -45,6 +45,31 @@ class UserController extends Controller
         }
     }
     /**
+     * 编辑个人资料
+     */
+    public function editPersonInfo(){
+        if(IS_POST){
+            if($this->model->create() === false){
+                $this->error(get_errors($this->model));
+            }
+            if($this->model->editUser() === false){
+                $this->error(get_errors($this->model));
+            }
+            $this->success('编辑成功！',U('User/login'));
+        }else{
+            $this->display();
+        }
+    }
+    /**
+     * 修改密码
+     */
+    public function editPassword(){
+        if($this->model->editPassword() === false){
+            $this->error(get_errors($this->model));
+        }
+        $this->success('修改成功！请重新登录！',U('User/logout'));
+    }
+    /**
      * 验证验证码 发送短信
      */
     public function send_sms($tel,$verify){
@@ -223,7 +248,11 @@ class UserController extends Controller
     public function ucenter(){
         $orderList = D('Order')->getOrderList();
 //        dump($orderList);exit;
-        $this->assign('orders',$orderList);
+        if($orderList === false){
+            $this->assign('list','亲！您还没有任何订单！');
+        }else{
+            $this->assign('orders',$orderList);
+        }
         $this->display();
     }
 }

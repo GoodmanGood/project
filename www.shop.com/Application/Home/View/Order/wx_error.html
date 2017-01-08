@@ -1,0 +1,18 @@
+<extend name="Public:index"/>
+<block name="css">
+	<!--<link href="__CSS__/jquery.auto-complete.css" rel="stylesheet" type="text/css">-->
+	<link href="__CSS__/ucart.css" rel="stylesheet" type="text/css">
+	<!--<link href="__CSS__/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+</block>
+<block name="content">
+	<div style="margin: 50px auto; border: 1px solid #c0c0c0;width: 900px;height:300px;">
+		<h2 style="color: green;margin: 20px 10px 10px 10px;">神仙茶产品订单支付错误提示</h2>
+		<h3 style="color: red;margin: 20px 10px 10px 10px;">微信支付错误提示</h3>
+		<hr style="margin-top: 20px"/>
+		<span style="margin: 10px 200px 0 20px;"><b>错误原因：<br>&emsp;&emsp;{$error}，请稍候再试！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a onclick="history.go(-1)" style="color: red">点此返回</a></b></span>
+
+	</div>
+</block>
+<block name="js">
+
+</block>

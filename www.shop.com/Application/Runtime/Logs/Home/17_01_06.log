@@ -1,1504 +1,7 @@
-[ 2017-01-06T00:10:48+08:00 ] 127.0.0.1 /User/ucenter.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0070s ]
-SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order_detail`  [ RunTime:0.0000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
-NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 54 行.
-NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/3.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0090s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/index
+[ 2017-01-06T19:36:43+08:00 ] 127.0.0.1 /Index/index.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0170s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:49+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0110s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:50+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:51+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:51+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0530s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:51+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:51+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:51+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.2130s ]
-
-[ 2017-01-06T00:10:52+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:53+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0090s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:53+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:53+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:53+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:10:53+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:10:53+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0080s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
-
-[ 2017-01-06T00:13:55+08:00 ] 127.0.0.1 /User/ucenter.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.002000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0010s ]
-SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order_detail`  [ RunTime:0.0010s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
-NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 54 行.
-NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-01-06T00:13:55+08:00 ] 127.0.0.1 /Order/pay/id/2.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:55+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:56+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:57+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:13:58+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:13:58+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0030s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0090s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001001s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001001s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:14:03+08:00 ] 127.0.0.1 /Order/pay/id/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/WeixinPay/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order` WHERE `user_id` = 21 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
-
-[ 2017-01-06T00:17:09+08:00 ] 127.0.0.1 /User/ucenter.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0010s ]
-SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (3,2,1)  [ RunTime:0.0000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
-NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 54 行.
-NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-01-06T00:17:09+08:00 ] 127.0.0.1 /User/ucenter.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0000s ]
-SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (3,2,1)  [ RunTime:0.0010s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
-NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 54 行.
-NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-01-06T00:17:17+08:00 ] 127.0.0.1 /Index/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
@@ -1506,10 +9,153 @@ INFO: [ action_begin ] --START--
 INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
 INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Use of undefined constant sess_ - assumed 'sess_' D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Use of undefined constant login_info - assumed 'login_info' D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Use of undefined constant real_name - assumed 'real_name' D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-06T19:37:42+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-06T19:37:43+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
 SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-06T19:37:43+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-06T19:38:44+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
 SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
@@ -1518,56 +164,54 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 39 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
 NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
-[ 2017-01-06T00:17:17+08:00 ] 127.0.0.1 /Cart/cartList.html
+[ 2017-01-06T19:38:45+08:00 ] 127.0.0.1 /Index/index.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 INFO: [ action_begin ] --START--
 INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
 INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0100s ]
-SQL: SELECT `goods_id`,`amount` FROM `cart` WHERE `user_id` = 21  [ RunTime:0.0010s ]
-NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\phpStudy\WWW\shop\www.shop.com\Application\Home\Controller\CartController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\6ca00aea9ee6c20664aa2883c304846a.php on line 42 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
 NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\6ca00aea9ee6c20664aa2883c304846a.php 第 55 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
-[ 2017-01-06T00:17:18+08:00 ] 127.0.0.1 /Public/css/jquery.auto-complete.css
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-ERR: 无法加载控制器:Public
-
-[ 2017-01-06T00:17:19+08:00 ] 127.0.0.1 /Index/index.html
+[ 2017-01-06T19:38:45+08:00 ] 127.0.0.1 /Index/index.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
@@ -1575,11 +219,116 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.000000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0090s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-06T19:38:46+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.002001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0100s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-01-06T19:39:05+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0000s ]
-SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0040s ]
+SQL: SELECT ac.category_name,ac.category_id,a.article_name,a.article_id FROM article_category ac INNER JOIN article a on ac.category_id = a.article_category_id  ORDER BY category_sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `article_category` ORDER BY category_sort LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-06T19:39:17+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.001000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods_category` WHERE `level` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `goods` ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
 SQL: SELECT * FROM `goods` ORDER BY id desc  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `article_category` [ RunTime:0.0050s ]
@@ -1590,46 +339,14 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 39 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
+NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 37 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
 NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8] Undefined index: login_info D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-01-06T00:18:19+08:00 ] 127.0.0.1 /User/ucenter.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ action_begin ] --START--
-INFO: Run Home\Behavior\CheckrbacBehavior [ RunTime:0.002000s ]
-INFO: [ action_begin ] --END-- [ RunTime:0.002000s ]
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
-SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
-SQL: SELECT `id`,`create_time`,`status`,`price`,`delivery_price` FROM `order` WHERE `user_id` = 21 ORDER BY id desc  [ RunTime:0.0000s ]
-SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0050s ]
-SQL: SELECT * FROM `order_detail` WHERE `order_id` IN (3,2,1)  [ RunTime:0.0000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [2] Missing argument 1 for dump(), called in D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php on line 41 and defined D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 831 行.
-NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\shop\ThinkPHP\Common\functions.php 第 842 行.
-NOTIC: [8] Undefined variable: lists D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 54 行.
-NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shop\www.shop.com\Application\Runtime\Cache\Home\2bb33bd331bd7386a7b751fb46cf29e1.php 第 94 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]

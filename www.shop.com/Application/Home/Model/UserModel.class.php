@@ -144,4 +144,41 @@ class UserModel extends Model
             }
         }
     }
+    /**
+     * 修改密码
+     */
+    public function editPassword(){
+        $user = $this->where(['id'=>getUserId()])->find();
+        if (!$user) {
+            $this->error ='非法操作！该用户不存在！';
+            return false;
+        }
+        //验证旧密码
+        $pwd = md5(md5(I('post.old_password')) . $user['salt']);
+        if ($pwd != $user['password']) {
+            $this->error ='旧密码错误！';
+            return false;
+        }
+        //修改新密码
+        $password = I('post.password');
+        $repassword = I('post.repassword');
+        if($password != $repassword){
+            $this->error ='确认密码不一致！';
+            return false;
+        }
+        //新密码加盐加密
+        $salt = $this->salt();
+        $password = md5(md5($password) . $salt);
+        $data = [
+            'id'=>getUserId(),
+            'password' => $password,
+            'salt' => $salt
+        ];
+        $res = $this->save($data);
+        if($res === false){
+            $this->error ='密码修改失败！请稍候再试！';
+            return false;
+        }
+        return $res;
+    }
 }
